@@ -1,0 +1,226 @@
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  max-height: 600px;
+}
+::ng-deep .mat-mdc-tab-group {
+  background: rgba(0, 0, 0, 0.6);
+}
+::ng-deep .mat-mdc-tab-header {
+    /* display: flex
+; */
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    width: 63%;
+    margin: 0 auto;
+}
+::ng-deep .mat-mdc-tab-header {
+  border-bottom: none;
+  display: flex;
+}
+
+::ng-deep .mat-mdc-tab-labels {
+  display: flex;
+  flex: 1;
+}
+
+::ng-deep .mat-mdc-tab {
+  flex: 1;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+::ng-deep .mat-mdc-tab:last-child {
+  border-right: none;
+}
+
+::ng-deep .mat-mdc-tab.mdc-tab--active {
+  background: #00bfff;
+  color: #000;
+}
+
+::ng-deep .mat-mdc-tab-indicator {
+  display: none !important;
+}
+
+::ng-deep .mat-mdc-tab .mdc-tab__text-label,
+.mat-mdc-tab-link .mdc-tab__text-label {
+  color: #fff;
+}
+::ng-deep .mt-minus {
+  margin-top: -8.4%;
+}
+::ng-deep .container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+::ng-deep .mat-mdc-tab-body-content {
+  height: 100%;
+  overflow: auto;
+  background-color: #000;
+  opacity: 0.5;
+  color: #fff;
+  padding: 15px;
+}
+
+::ng-deep .rooms-field {
+  width: 250px;
+}
+
+::ng-deep .option-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+::ng-deep .summary {
+  margin-top: 10px;
+  text-align: right;
+}
+
+::ng-deep .mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: #fff;
+}
+:focus-visible {
+  outline: #fff auto 1px;
+}
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: transparent;
+  border: 1px solid #ccc;
+}
+::ng-deep .mat-mdc-icon-button.mat-mdc-button-base {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  color: #fff;
+}
+::ng-deep .mat-mdc-select-arrow svg {
+  fill: rgb(255 255 255 / 54%) !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+::ng-deep .mdc-text-field:not(.mdc-text-field--disabled)  .mdc-text-field__input {
+  color: #fff;
+}
+::ng-deep .mat-mdc-select-value {
+  color: #fff;
+}
+
+::ng-deep .btn-default.btn0 {
+  border: 1px solid #13e7ff;
+  color: #000;
+  padding: 10px 20px 10px 20px;
+  margin-top: 20px;
+  clear: both;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+::ng-deep .btn-default.btn0:hover {
+  background-color: #13e7ff;
+  color: #fff;
+  cursor: pointer;
+}
+::ng-deep .txt3 {
+  margin-top: 20px;
+}
+
+#tours {
+  position: relative;
+}
+
+::ng-deep .tour1 {
+    position: relative;
+    width: 25%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    height: 274px;
+}
+::ng-deep .tour1 a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+::ng-deep .tour1 a figure {
+  position: relative;
+  z-index: 2;
+  top: 0;
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+::ng-deep .tour1 a figure img {
+  width: 100%;
+}
+::ng-deep .tour1 a .caption {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 20px 5px 20px 20px;
+  z-index: 1;
+}
+::ng-deep .tour1 a .caption .txt1 {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1;
+  padding-bottom: 10px;
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+::ng-deep .tour1 a .caption .txt2 .stars1 {
+  display: inline-block;
+}
+::ng-deep .tour1 a .caption .txt2 .stars1 img {
+  padding-right: 5px;
+  vertical-align: top;
+  padding-top: 6px;
+}
+::ng-deep .tour1 a .caption .txt2 .rev-num {
+  display: inline-block;
+  color: #bebebe;
+  padding-left: 10px;
+}
+::ng-deep .tour1 a .caption .txt3 {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1;
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 10px;
+}
+::ng-deep .tour1 a:hover figure{
+    top: -130px;
+}
+::ng-deep .mb-spc{
+margin-bottom: 8%;
+}
+
+

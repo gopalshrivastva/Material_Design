@@ -1,0 +1,484 @@
+<div class="slider-section">
+  <div
+    id="carouselExampleIndicators"
+    class="carousel slide"
+    data-ride="carousel"
+  >
+    <ol class="carousel-indicators">
+      <li
+        data-target="#carouselExampleIndicators"
+        data-slide-to="0"
+        class="active"
+      ></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="assets/img/bg2.jpg" alt="First slide" />
+      </div>
+      <div class="carousel-item">
+        <img
+          class="d-block w-100"
+          src="assets/img/bg3.jpg"
+          alt="Second slide"
+        />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="assets/img/bg.jpg" alt="Third slide" />
+      </div>
+    </div>
+    <a
+      class="carousel-control-prev"
+      href="#carouselExampleIndicators"
+      role="button"
+      data-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a
+      class="carousel-control-next"
+      href="#carouselExampleIndicators"
+      role="button"
+      data-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="container-fluid mt-minus">
+  <mat-tab-group animationDuration="0ms">
+    <mat-tab label="Flight">
+        <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <mat-form-field appearance="fill">
+              <mat-label>Select</mat-label>
+              <mat-select>
+                <mat-option value="one">First option</mat-option>
+                <mat-option value="two">Second option</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-md-3">
+            <mat-form-field>
+              <mat-label>Choose a date</mat-label>
+              <input matInput [matDatepicker]="picker" />
+              
+              <mat-datepicker-toggle
+                matIconSuffix
+                [for]="picker"
+              ></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div class="col-md-3">
+            <mat-form-field>
+              <mat-label>Choose a date</mat-label>
+              <input matInput [matDatepicker]="picker" />
+              
+              <mat-datepicker-toggle
+                matIconSuffix
+                [for]="picker"
+              ></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div class="col-md-3">
+            <mat-form-field  class="rooms-field">
+              <mat-label>Rooms & Guests</mat-label>
+              <mat-select [(value)]="selectedSummary">
+                <mat-option>
+                  <div class="option-row">
+                    <span>Rooms</span>
+                    <mat-select [(value)]="rooms">
+                      <mat-option
+                        *ngFor="let r of [1, 2, 3, 4, 5]"
+                        [value]="r"
+                        >{{ r }}</mat-option
+                      >
+                    </mat-select>
+                  </div>
+                </mat-option>
+
+                <mat-option>
+                  <div class="option-row">
+                    <span>Adults</span>
+                    <mat-select [(value)]="adults">
+                      <mat-option
+                        *ngFor="let a of [1, 2, 3, 4, 5, 6]"
+                        [value]="a"
+                        >{{ a }}</mat-option
+                      >
+                    </mat-select>
+                  </div>
+                </mat-option>
+
+                <mat-option>
+                  <div class="option-row">
+                    <span>Children</span>
+                    <mat-select [(value)]="children">
+                      <mat-option
+                        *ngFor="let c of [0, 1, 2, 3, 4]"
+                        [value]="c"
+                        >{{ c }}</mat-option
+                      >
+                    </mat-select>
+                  </div>
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+       
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Hotel">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <mat-form-field appearance="fill">
+              <mat-label>Select</mat-label>
+              <mat-select>
+                <mat-option value="one">First option</mat-option>
+                <mat-option value="two">Second option</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-md-3">
+            <mat-form-field>
+              <mat-label>Choose a date</mat-label>
+              <input matInput [matDatepicker]="picker" />
+              
+              <mat-datepicker-toggle
+                matIconSuffix
+                [for]="picker"
+              ></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div class="col-md-3">
+            <mat-form-field>
+              <mat-label>Choose a date</mat-label>
+              <input matInput [matDatepicker]="picker" />
+              
+              <mat-datepicker-toggle
+                matIconSuffix
+                [for]="picker"
+              ></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div class="col-md-3">
+            <mat-form-field  class="rooms-field">
+              <mat-label>Rooms & Guests</mat-label>
+              <mat-select [(value)]="selectedSummary">
+                <mat-option>
+                  <div class="option-row">
+                    <span>Rooms</span>
+                    <mat-select [(value)]="rooms">
+                      <mat-option
+                        *ngFor="let r of [1, 2, 3, 4, 5]"
+                        [value]="r"
+                        >{{ r }}</mat-option
+                      >
+                    </mat-select>
+                  </div>
+                </mat-option>
+
+                <mat-option>
+                  <div class="option-row">
+                    <span>Adults</span>
+                    <mat-select [(value)]="adults">
+                      <mat-option
+                        *ngFor="let a of [1, 2, 3, 4, 5, 6]"
+                        [value]="a"
+                        >{{ a }}</mat-option
+                      >
+                    </mat-select>
+                  </div>
+                </mat-option>
+
+                <mat-option>
+                  <div class="option-row">
+                    <span>Children</span>
+                    <mat-select [(value)]="children">
+                      <mat-option
+                        *ngFor="let c of [0, 1, 2, 3, 4]"
+                        [value]="c"
+                        >{{ c }}</mat-option
+                      >
+                    </mat-select>
+                  </div>
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+       
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Bus Ticket">Bus Content 3</mat-tab>
+    <mat-tab label="Retiring Room">RR Content 3</mat-tab>
+    <mat-tab label="Lounge">Lounge Content 3</mat-tab>
+    <!-- <mat-tab label="Tour Package">Tour Package Content 3</mat-tab> -->
+    <!-- <mat-tab label="Bharat Gaurav">Bharat Gaurav Content 3</mat-tab> -->
+    <mat-tab label="Buddhist Train">Buddhist Content 3</mat-tab>
+    <mat-tab label="Maharaja">Maharaja Content 3</mat-tab>
+    <mat-tab label="Golden Chariot">Golder Content 3</mat-tab>
+    <mat-tab label="Ferry">Ferry Content 3</mat-tab>
+    <!-- <mat-tab label="Hely Yatra">Hely Yatra Content 3</mat-tab>
+    <mat-tab label="TAG">TAG Content 3</mat-tab> -->
+    <mat-tab label="Trek">Trek Content 3</mat-tab>
+  </mat-tab-group>
+</div>
+
+<section class="text-center mt-5 mb-spc uppercase">
+    <div class="container">
+        <h1 style="text-transform: uppercase;">why we are the best</h1>
+        <p style="width: 700px; text-align: center; margin: 0 auto;">
+            Lorem ipsum dolor sit amet, la france dio perpendum mobile, lacrimosa non troppo
+vitae el mundo, abricoso trkae mundo la vita nova.
+        </p>
+        <div class="row mt-5">
+      <div class="col-sm-3">
+        <div class="services1">
+          <figure>
+            <img src="assets/img/services1.png" alt="" class="img-responsive">
+          </figure>
+          <div class="caption">
+            <div class="h5" style="text-transform: uppercase;">happy customers</div>
+            <div class="txt2">Concateur a bravo durso, sit amet lacrimosa perpentum mobile la franco duro, saturno prio de la cruse.</div>
+            <div class="txt3"><a href="#" class="btn-default btn0">view more</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="services1">
+          <figure>
+            <img src="assets/img/services2.png" alt="" class="img-responsive">
+          </figure>
+          <div class="caption">
+            <div class="h5" style="text-transform: uppercase;">our amazing tours</div>
+            <div class="txt2">Concateur a bravo durso, sit amet lacrimosa perpentum mobile la franco duro, saturno prio de la cruse.</div>
+            <div class="txt3"><a href="#" class="btn-default btn0">view more</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="services1">
+          <figure>
+            <img src="assets/img/services3.png" alt="" class="img-responsive">
+          </figure>
+          <div class="caption">
+            <div class="h5" style="text-transform: uppercase;">support cases</div>
+            <div class="txt2">Concateur a bravo durso, sit amet lacrimosa perpentum mobile la franco duro, saturno prio de la cruse.</div>
+            <div class="txt3"><a href="#" class="btn-default btn0">view more</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="services1">
+          <figure>
+            <img src="assets/img/services4.png" alt="" class="img-responsive">
+          </figure>
+          <div class="caption">
+            <div class="h5" style="text-transform: uppercase;">our cruises</div>
+            <div class="txt2 justify-content-between">Concateur a bravo durso, sit amet lacrimosa perpentum mobile la franco duro, saturno prio de la cruse.</div>
+            <div class="txt3"><a href="#" class="btn-default btn0">view more</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
+
+
+<div id="tours mt-5">
+  <div class="clearfix">
+    <div class="tour1 clearfix">
+      <a href="#" class="clearfix">
+        <figure>
+          <img src="assets/img/tour01.jpg" alt="" class="img-responsive">
+        </figure>
+        <div class="caption">
+          <div class="txt1">family tour in greece</div>
+          <div class="txt2">
+            <div class="stars1">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+            </div>
+            <div class="rev-num">325 Reviews</div>
+          </div>
+          <div class="txt3">$578</div>
+        </div>
+      </a>
+    </div>
+    <div class="tour1 clearfix">
+      <a href="#" class="clearfix">
+        <figure>
+          <img src="assets/img/tour02.jpg" alt="" class="img-responsive">
+        </figure>
+        <div class="caption">
+          <div class="txt1">family tour in greece</div>
+          <div class="txt2">
+            <div class="stars1">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+            </div>
+            <div class="rev-num">325 Reviews</div>
+          </div>
+          <div class="txt3">$578</div>
+        </div>
+      </a>
+    </div>
+    <div class="tour1 clearfix">
+      <a href="#" class="clearfix">
+        <figure>
+          <img src="assets/img/tour03.jpg" alt="" class="img-responsive">
+        </figure>
+        <div class="caption">
+          <div class="txt1">family tour in greece</div>
+          <div class="txt2">
+            <div class="stars1">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+            </div>
+            <div class="rev-num">325 Reviews</div>
+          </div>
+          <div class="txt3">$578</div>
+        </div>
+      </a>
+    </div>
+    <div class="tour1 clearfix">
+      <a href="#" class="clearfix">
+        <figure>
+          <img src="assets/img/tour04.jpg" alt="" class="img-responsive">
+        </figure>
+        <div class="caption">
+          <div class="txt1">family tour in greece</div>
+          <div class="txt2">
+            <div class="stars1">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+            </div>
+            <div class="rev-num">325 Reviews</div>
+          </div>
+          <div class="txt3">$578</div>
+        </div>
+      </a>
+    </div>
+    <div class="tour1 clearfix">
+      <a href="#" class="clearfix">
+        <figure>
+          <img src="assets/img/tour05.jpg" alt="" class="img-responsive">
+        </figure>
+        <div class="caption">
+          <div class="txt1">family tour in greece</div>
+          <div class="txt2">
+            <div class="stars1">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+            </div>
+            <div class="rev-num">325 Reviews</div>
+          </div>
+          <div class="txt3">$578</div>
+        </div>
+      </a>
+    </div>
+    <div class="tour1 clearfix">
+      <a href="#" class="clearfix">
+        <figure>
+          <img src="assets/img/tour06.jpg" alt="" class="img-responsive">
+        </figure>
+        <div class="caption">
+          <div class="txt1">family tour in greece</div>
+          <div class="txt2">
+            <div class="stars1">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+            </div>
+            <div class="rev-num">325 Reviews</div>
+          </div>
+          <div class="txt3">$578</div>
+        </div>
+      </a>
+    </div>
+    <div class="tour1 clearfix">
+      <a href="#" class="clearfix">
+        <figure>
+          <img src="assets/img/tour07.jpg" alt="" class="img-responsive">
+        </figure>
+        <div class="caption">
+          <div class="txt1">family tour in greece</div>
+          <div class="txt2">
+            <div class="stars1">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+            </div>
+            <div class="rev-num">325 Reviews</div>
+          </div>
+          <div class="txt3">$578</div>
+        </div>
+      </a>
+    </div>
+    <div class="tour1 clearfix">
+      <a href="#" class="clearfix">
+        <figure>
+          <img src="assets/img/tour08.jpg" alt="" class="img-responsive">
+        </figure>
+        <div class="caption">
+          <div class="txt1">family tour in greece</div>
+          <div class="txt2">
+            <div class="stars1">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+              <img src="assets/img/star1.png" alt="">
+            </div>
+            <div class="rev-num">325 Reviews</div>
+          </div>
+          <div class="txt3">$578</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="partners" class="mt-5">
+    <div class="container">
+         <h1 class="text-center" style="text-transform: uppercase;">Our partners & Investors </h1>
+        <p class="mt-3" style="width: 700px; text-align: center; margin: 0 auto;">
+            Lorem ipsum dolor sit amet, la france dio perpendum mobile, lacrimosa non troppo
+vitae el mundo, abricoso trkae mundo la vita nova.
+        </p>
+        
+    </div>>
+</div>
